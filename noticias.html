@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+
+    <!-- Enlaza Bootstrap desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+        }
+
+        .menu {
+            background-color: #58B2AF;
+            text-align: left;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .menu a:hover {
+            background-color: #409091; /* Cambio de color al pasar el ratón */
+        }
+
+        .jumbotron {
+            background-color: transparent;
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            color: #58B2AF; /* Color de las flechas */
+        }
+
+        .carousel-indicators li {
+            border: 1px solid #58B2AF; /* Borde de los indicadores */
+        }
+
+        .news-text {
+            background-color: rgba(88, 178, 175, 0.7); /* Fondo semitransparente */
+            padding: 10px;
+            color: #000; /* Texto negro en el fondo */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú -->
+<div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="noticias.html">Noticias</a>
+</div>
+
+<!-- Contenido principal -->
+<div class="container">
+    <h1>Noticias</h1>
+
+    <!-- Jumbotron con Carrusel -->
+    <div id="noticiasCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores del carrusel -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#noticiasCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#noticiasCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#noticiasCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#noticiasCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#noticiasCarousel" data-bs-slide-to="4"></li>
+        </ol>
+
+        <!-- Carrusel de noticias -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/noticia1.jpg" alt="Noticia 1">
+                <div class="carousel-caption news-text">
+                    <h3>Noticia 1</h3>
+                    <p>Texto de la noticia 1. <a href="#" data-bs-toggle="modal" data-bs-target="#modalNoticia1">Ver más</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/noticia2.jpg" alt="Noticia 2">
+                <div class="carousel-caption news-text">
+                    <h3>Noticia 2</h3>
+                    <p>Texto de la noticia 2. <a href="#" data-bs-toggle="modal" data-bs-target="#modalNoticia2">Ver más</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/noticia3.jpg" alt="Noticia 3">
+                <div class="carousel-caption news-text">
+                    <h3>Noticia 3</h3>
+                    <p>Texto de la noticia 3. <a href="#" data-bs-toggle="modal" data-bs-target="#modalNoticia3">Ver más</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/noticia4.jpg" alt="Noticia 4">
+                <div class="carousel-caption news-text">
+                    <h3>Noticia 4</h3>
+                    <p>Texto de la noticia 4. <a href="#" data-bs-toggle="modal" data-bs-target="#modalNoticia4">Ver más</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/noticia5.jpg" alt="Noticia 5">
+                <div class="carousel-caption news-text">
+                    <h3>Noticia 5</h3>
+                    <p>Texto de la noticia 5. <a href="#" data-bs-toggle="modal" data-bs-target="#modalNoticia5">Ver más</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flechas de control del carrusel -->
+        <a class="carousel-control-prev" href="#noticiasCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#noticiasCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Modales de noticias -->
+    <!-- Modal Noticia 1 -->
+    <div class="modal fade" id="modalNoticia1" tabindex="-1" aria-labelledby="modalNoticia1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNoticia1Label">Noticia 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Texto detallado de la Noticia 1.</p>
+                    <!-- Puedes agregar más contenido aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Repite el código del modal para las demás noticias (Noticias 2, 3, 4, y 5) -->
+
+</div>
+
+<!-- Enlaza Bootstrap desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5

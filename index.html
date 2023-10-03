@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+
+    <!-- Enlaza Bootstrap desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+        }
+
+        .jumbotron {
+            background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            padding: 100px;
+            color: #fff;
+            background-opacity: 0.6; /* Opacidad de fondo */
+        }
+
+        .menu {
+            background-color: #58B2AF;
+            text-align: left;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .menu a:hover {
+            background-color: #409091; /* Cambio de color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú -->
+<div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="noticias.html">Noticias</a>
+</div>
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <h1>Bienvenido a Mi Sitio Web</h1>
+    <p>Explora nuestro proyecto emocionante</p>
+</div>
+
+<!-- Contenido principal -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Contenido Principal</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ac sapien a arcu malesuada hendrerit.</p>
+            <p>Curabitur id ante in quam hendrerit rhoncus. Nullam elementum, urna at vehicula rhoncus, purus orci bibendum nunc.</p>
+            <p>Etiam at lectus eu justo lacinia efficitur. Nullam at dapibus justo.</p>
+        </div>
+        <div class="col">
+            <h2>Video</h2>
+            <!-- Inserta el video de YouTube -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/K5pkkuiyRzk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Enlaza Bootstrap desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
